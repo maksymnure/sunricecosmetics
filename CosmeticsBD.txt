@@ -100,3 +100,24 @@ CREATE TABLE Receipt_has_product
 	foreign key (id_product) references Product(id_product)
 );
 
+insert into Catalog(name) values('Для обличчя');
+insert into Catalog(name) values('Для тіла');
+
+insert into client_status values ('Зареєстрованний');
+insert into client_status values ('Адмін');
+insert into company values ('Bioderma','Франція', 'biderma@gmail.com');
+insert into company values ('Vichy','Франція', 'vichy@gmail.com');
+insert into company values ('Nivea','Німеччина', 'nivea@gmail.com');
+insert into company values ('La Roche-Posay','Франція', 'larocheposay@gmail.com');
+insert into product values ('Slow Age','1','762.0000','13','2','антивіковий, від зморшок, відновлення, від перших ознак старіння, захист від сонця, зволоження, зміцнення, проти пігментних плям, розгладження','~\Pictures\Vichy_SlowAge_BIG.jpg','~\Pictures\Vichy_SlowAge_SMALL.jpg');
+insert into product values ('Liftactiv','1','735.0000','10','2','антивіковий, від зморшок, відновлення, зволоження, зміцнення, ліфтинг, розгладження','~\Pictures\Vichy_Liftactiv_BIG.jpg','~\Pictures\Vichy_Liftactiv_SMALL.jpg');
+insert into product values ('Hydrabio','1','500.0000','3','1','Інтенсивно зволожувальний крем для сухої шкіри','~\Pictures\La Roche-Posay-Lipikar_BIG.jpg','~\Pictures\La Roche-Posay-Lipikar_SMALL.jpg');
+insert into product values ('La Roche-Posay-Lipikar','2','249.0000','20','4','Липидовосстанавливающий бальзам для очень сухой и склонной к атопии кожи лица и тела','~\Pictures\Bioderma_Hydrabio_BIG.jpg','~\Pictures\Bioderma_Hydrabio_SMALL.jpg');
+insert into product values ('Nivea Body SOS','2','79.0000','50','3','Бальзам для тела SOS для очень сухой кожи','~\Pictures\NIVEA_BODY_SOS_BIG.jpg','~\Pictures\NIVEA_BODY_SOS_SMALL.jpg');
+insert into product values ('Vichy Neovadiol','2','804.0000','27','2','Крем для зоны шеи, декольте и овала лица','~\Pictures\Vichy_Neovadiol_BIG.jpg','~\Pictures\Vichy_Neovadiol_SMALL.jpg');
+insert into Receipt_status values('Не підвердженний');
+insert into Receipt_status values('Підтвердженний');
+insert into Receipt_status values('Відхиленний');
+insert into Client values('user1', '380952194018', 'user1', 'user1', '2000-01-01', 'Харьков', 'user1', 'user1', 1);
+insert into Client values('user2', '380952194019', 'user2', 'user2', '2000-01-02', 'Харьков', 'user2', 'user2', 1);
+insert into Client values('admin1', '380952194020', 'admin1', 'admin1', '2000-03-03', 'Харьков', 'admin1', 'admin1', 2);
