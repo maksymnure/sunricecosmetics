@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="WebApplication1.WebForm2" enableSessionState="true" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DetailedOfView.aspx.cs" Inherits="WebApplication1.DetailedOfView" enableSessionState="true" %>
 
 <!DOCTYPE html>
 
@@ -12,11 +12,11 @@
             height: 22px;
         }
         .auto-style2 {
-            width: 10px;
+            width: 658px;
         }
         .auto-style3 {
             height: 22px;
-            width: 10px;
+            width: 658px;
         }
     </style>
     <link rel="stylesheet" href="DetailedOfView.css"/>
@@ -51,15 +51,14 @@
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style1"></td>
-                <td class="auto-style1"></td>
                 <td class="auto-style1" colspan="3">
-                    <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="id_product" DataSourceID="SqlDataSource1" Height="50px" style="margin-top: 0px" Width="125px" OnPageIndexChanging="DetailsView1_PageIndexChanging" CellPadding="4" ForeColor="#333333" GridLines="None">
+                    <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="id_product" DataSourceID="SqlDataSource1" Height="350px" style="margin-top: 0px" Width="458px" OnPageIndexChanging="DetailsView1_PageIndexChanging" CellPadding="4" ForeColor="#333333" GridLines="None">
                         <AlternatingRowStyle BackColor="White" />
                         <CommandRowStyle BackColor="#D1DDF1" Font-Bold="True" />
                         <EditRowStyle BackColor="#2461BF" />
                         <FieldHeaderStyle BackColor="#DEE8F5" Font-Bold="True" />
                         <Fields>
-                            <asp:ImageField DataImageUrlField="img_big" HeaderText="Фото товара">
+                            <asp:ImageField DataImageUrlField="img_big" HeaderText="Фото товара" ControlStyle-Width = "200" ControlStyle-Height = "200">
                             </asp:ImageField>
                             <asp:BoundField DataField="id_product" HeaderText="id_product" InsertVisible="False" ReadOnly="True" SortExpression="id_product" Visible="False" />
                             <asp:BoundField DataField="title" HeaderText="Название" SortExpression="title" />
@@ -67,10 +66,6 @@
                             <asp:BoundField DataField="description" HeaderText="Описание" SortExpression="description" />
                             <asp:BoundField DataField="name" HeaderText="Фирма-производитель" SortExpression="name" />
                         </Fields>
-                        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-                        <RowStyle BackColor="#EFF3FB" />
                     </asp:DetailsView>
                 </td>
                 <td class="auto-style1"></td>
@@ -83,18 +78,19 @@
                 <td class="auto-style1"></td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
+                <td style="text-align:right" class="auto-style3"><asp:Button ID="Button4" runat="server" CssClass="Button" Text="Добавить в корзину" OnClick="Button1_Click" />
+                </td>
                 <td class="auto-style1">&nbsp;</td>
                 <td class="auto-style1">&nbsp;</td>
                 <td class="auto-style1">
-                    &nbsp;<asp:Button ID="Button4" runat="server" Text="Добавить в корзину" OnClick="Button1_Click" />
+                    &nbsp;</td>
+                <td class="auto-style1">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button5" runat="server" CssClass="Button" OnClick="Button3_Click" Text="Оформить заказ" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button6" runat="server" CssClass="Button" Text="Вернутся к просмотру товаров" OnClick="Button2_Click" />
+                
                 </td>
                 <td class="auto-style1">
-                    <asp:Button ID="Button5" runat="server" OnClick="Button3_Click" Text="Оформить заказ" />
-                </td>
-                <td class="auto-style1">
-                    <asp:Button ID="Button6" runat="server" Text="Вернутся к просмотру товаров" OnClick="Button2_Click" />
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style1">&nbsp;</td>
             </tr>
             <tr>

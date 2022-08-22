@@ -91,7 +91,7 @@ h2 {
     color: #ffffff;
     padding: 5px;
     border-radius: 10px;
-    min-width: 100px;
+    max-width: 40px;
 }
 
 .divProblem {
@@ -112,4 +112,24 @@ h2 {
 .Label {
     padding-top: 5px;
     padding-left: 3px;
+}
+
+.Filter {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.catalog {
+    margin-left: 5%;
+    margin-right: auto;
+    max-width: 15%;
+}
+@media (min-width: 1000px) {
+    .catalog {
+        margin-left: 20%;
+    }
 }

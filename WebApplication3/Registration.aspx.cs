@@ -142,5 +142,12 @@ namespace WebApplication3
         {
             Response.Redirect("Cabinet.aspx");
         }
+
+        protected void BascketPage_Click(object sender, EventArgs e)  //Basket
+        {
+            Response.Redirect("Basket.aspx");
+        }
+
+
     }
 }
