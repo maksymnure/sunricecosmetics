@@ -11,7 +11,7 @@ namespace WebApplication3
 {
 
 
-    public partial class StartPage
+    public partial class Cabinet
     {
 
         /// <summary>
@@ -51,39 +51,21 @@ namespace WebApplication3
         protected global::System.Web.UI.WebControls.LinkButton CabinetPage;
 
         /// <summary>
-        /// TextBoxLogin элемент управления.
+        /// SqlDataSource1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxLogin;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// TextBoxPassword элемент управления.
+        /// Exit элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxPassword;
-
-        /// <summary>
-        /// SignIn элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически созданное поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SignIn;
-
-        /// <summary>
-        /// Label1ms элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически созданное поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1ms;
+        protected global::System.Web.UI.WebControls.Button Exit;
     }
 }

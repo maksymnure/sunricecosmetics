@@ -25,25 +25,25 @@ namespace WebApplication3
             switch (st)
             {
                 case "1":
+                    RegisterPage.Visible = false;
+                    StartPager.Visible = false;
+                    
                     break;
                 case "2":
+                    RegisterPage.Visible = false;
+                    StartPager.Visible = false;
+                    
                     break;
                 case "":
+                    CabinetPage.Visible = false;
                     break;
                 case null:
+                    CabinetPage.Visible = false;
                     break;
             }
         }
 
 
-        protected void StartPager_Click(object sender, EventArgs e)  //Главная
-        {
-            Response.Redirect("StartPage.aspx");
-        }
-        protected void RegisterPage_Click(object sender, EventArgs e)  //RegisterPage
-        {
-            Response.Redirect("Registration.aspx");
-        }
 
         protected void SignIn_Click(object sender, EventArgs e)
         {
@@ -69,6 +69,7 @@ namespace WebApplication3
                 drWebUser.Close();
                 con.Close();
                 Registration();
+                Response.Redirect("Cabinet.aspx");
             }
             else
             {
@@ -77,6 +78,18 @@ namespace WebApplication3
                 Label1ms.Text = "Неверный логин или пароль";
                 Label1ms.ForeColor = System.Drawing.Color.Red;
             }
+        }
+        protected void StartPager_Click(object sender, EventArgs e)  //Главная
+        {
+            Response.Redirect("StartPage.aspx");
+        }
+        protected void RegisterPage_Click(object sender, EventArgs e)  //RegisterPage
+        {
+            Response.Redirect("Registration.aspx");
+        }
+        protected void CabinetPage_Click(object sender, EventArgs e)  //Cabinet
+        {
+            Response.Redirect("Cabinet.aspx");
         }
     }
 }
