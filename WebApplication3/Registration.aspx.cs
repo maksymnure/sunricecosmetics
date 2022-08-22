@@ -29,9 +29,11 @@ namespace WebApplication3
                 case "2":
                     break;
                 case "":
+                    BascketPage.Visible = false;
                     CabinetPage.Visible = false;
                     break;
                 case null:
+                    BascketPage.Visible = false;
                     CabinetPage.Visible = false;
                     break;
             }

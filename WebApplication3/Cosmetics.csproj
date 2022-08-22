@@ -65,6 +65,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bascket.css" />
+    <Content Include="Basket.aspx" />
     <Content Include="Cabinet.aspx" />
     <Content Include="Cabinet.css" />
     <Content Include="Catalog.aspx" />
@@ -86,6 +88,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Basket.aspx.cs">
+      <DependentUpon>Basket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basket.aspx.designer.cs">
+      <DependentUpon>Basket.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cabinet.aspx.cs">
       <DependentUpon>Cabinet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -93,6 +102,8 @@
     <Compile Include="Cabinet.aspx.designer.cs">
       <DependentUpon>Cabinet.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cart.cs" />
+    <Compile Include="CartUnit.cs" />
     <Compile Include="Catalog.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Catalog.aspx</DependentUpon>

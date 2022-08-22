@@ -30,6 +30,7 @@
             <asp:LinkButton ID="RegisterPage" runat="server" onclick="RegisterPage_Click" CssClass="LinkButton">Зареєструватися</asp:LinkButton>
             <asp:LinkButton ID="CatalogPage" runat="server" onclick="CatalogPage_Click" CssClass="LinkButton">Каталог</asp:LinkButton>
             <asp:LinkButton ID="CabinetPage" runat="server" onclick="CabinetPage_Click" CssClass="LinkButton">Кабінет</asp:LinkButton>
+            <asp:LinkButton ID="BascketPage" runat="server" onclick="BascketPage_Click" CssClass="LinkButton">Кошик</asp:LinkButton>
         </nav>
     </header>
         <table cellspacing="1" width="100%">
@@ -86,9 +87,11 @@
                 <td class="auto-style1">&nbsp;</td>
                 <td class="auto-style1">&nbsp;</td>
                 <td class="auto-style1">
-                    &nbsp;</td>
+                    &nbsp;<asp:Button ID="Button4" runat="server" Text="Добавить в корзину" OnClick="Button1_Click" />
+                </td>
                 <td class="auto-style1">
-                    &nbsp;</td>
+                    <asp:Button ID="Button5" runat="server" OnClick="Button3_Click" Text="Оформить заказ" />
+                </td>
                 <td class="auto-style1">
                     <asp:Button ID="Button6" runat="server" Text="Вернутся к просмотру товаров" OnClick="Button2_Click" />
                 </td>

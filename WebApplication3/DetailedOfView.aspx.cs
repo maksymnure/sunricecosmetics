@@ -14,11 +14,11 @@ namespace WebApplication1
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
-        /*public Cart objCart;*/
+        public Cart objCart;
         protected void Page_Load(object sender, EventArgs e)
         {
             Status();
-            /*OpenBasket();*/
+            OpenBasket();
             Label1.Visible = false;
         }
 
@@ -36,19 +36,21 @@ namespace WebApplication1
                     RegisterPage.Visible = false;
                     break;
                 case "":
+                    BascketPage.Visible = false;
                     CabinetPage.Visible = false;
-                    /*Button4.Visible = false;
-                    Button5.Visible = false;*/
+                    Button4.Visible = false;
+                    Button5.Visible = false;
                     break;
                 case null:
+                    BascketPage.Visible = false;
                     CabinetPage.Visible = false;
-                    /*Button4.Visible = false;
-                    Button5.Visible = false;*/
+                    Button4.Visible = false;
+                    Button5.Visible = false;
                     break;
             }
         }
 
-       /* protected void OpenBasket()
+       protected void OpenBasket()
         {
             if (Session["Surname"] == null)
             {
@@ -64,7 +66,7 @@ namespace WebApplication1
                     Session["CountUnit"] = "-1";
                 }
             }
-        }*/
+        }
 
         protected void LinkButton1_Click(object sender, EventArgs e)  //Краткий просмотр
         {
@@ -76,12 +78,15 @@ namespace WebApplication1
             Response.Redirect("DetailedOfView.aspx");
         }
 
-        /*protected void LinkButton3_Click(object sender, EventArgs e)   //Заказ товара
+        protected void LinkButton3_Click(object sender, EventArgs e)   //Заказ товара
         {
             Response.Redirect("Basket.aspx");
-        }*/
-
-        /*protected void Button1_Click(object sender, EventArgs e)  //добавить в корзину
+        }
+        protected void BascketPage_Click(object sender, EventArgs e)  //Basket
+        {
+            Response.Redirect("Bascket.aspx");
+        }
+        protected void Button1_Click(object sender, EventArgs e)  //добавить в корзину
         {
             string st = (string)Session["status"];
             if (st == "1" || st == "2")
@@ -128,7 +133,7 @@ namespace WebApplication1
             {
                 Response.Redirect("StartPage.aspx");
             }
-        }*/
+        }
 
 
         protected void Button3_Click(object sender, EventArgs e)  //Оформить заказ

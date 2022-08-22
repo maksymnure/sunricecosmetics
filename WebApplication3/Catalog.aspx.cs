@@ -15,7 +15,7 @@ namespace WebApplication1
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        /*public Cart objCart;*/
+        public Cart objCart;
         protected void Page_Load(object sender, EventArgs e)
         {
             Status();
@@ -38,9 +38,11 @@ namespace WebApplication1
                     break;
                 case "":
                     CabinetPage.Visible = false;
+                    BascketPage.Visible = false;
                     break;
                 case null:
                     CabinetPage.Visible = false;
+                    BascketPage.Visible = false;
                     break;
             }
         }
@@ -172,6 +174,10 @@ namespace WebApplication1
         protected void CatalogPage_Click(object sender, EventArgs e)  //Catalog
         {
             Response.Redirect("Catalog.aspx");
+        }
+        protected void BascketPage_Click(object sender, EventArgs e)  //Basket
+        {
+            Response.Redirect("Basket.aspx");
         }
     }
 }

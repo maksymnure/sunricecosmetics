@@ -60,6 +60,15 @@ namespace WebApplication3
         protected global::System.Web.UI.WebControls.LinkButton CabinetPage;
 
         /// <summary>
+        /// BascketPage элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton BascketPage;
+
+        /// <summary>
         /// SqlDataSource1 элемент управления.
         /// </summary>
         /// <remarks>

@@ -66,6 +66,14 @@ namespace WebApplication3
         {
             Response.Redirect("Cabinet.aspx");
         }
+        protected void CatalogPage_Click(object sender, EventArgs e)  //Catalog
+        {
+            Response.Redirect("Catalog.aspx");
+        }
+        protected void BascketPage_Click(object sender, EventArgs e)  //Basket
+        {
+            Response.Redirect("Basket.aspx");
+        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -74,9 +82,6 @@ namespace WebApplication3
             Response.Redirect("StartPage.aspx");
         }
 
-        protected void CatalogPage_Click(object sender, EventArgs e)  //Catalog
-        {
-            Response.Redirect("Catalog.aspx");
-        }
+
     }
 }
