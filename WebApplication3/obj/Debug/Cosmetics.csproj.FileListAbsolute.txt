@@ -1,0 +1,7 @@
+D:\Documents\sunricecosmetics\WebApplication3\bin\WebApplication3.dll.config
+D:\Documents\sunricecosmetics\WebApplication3\bin\WebApplication3.dll
+D:\Documents\sunricecosmetics\WebApplication3\bin\WebApplication3.pdb
+D:\Documents\sunricecosmetics\WebApplication3\obj\Debug\Cosmetics.csproj.AssemblyReference.cache
+D:\Documents\sunricecosmetics\WebApplication3\obj\Debug\Cosmetics.csproj.CoreCompileInputs.cache
+D:\Documents\sunricecosmetics\WebApplication3\obj\Debug\WebApplication3.dll
+D:\Documents\sunricecosmetics\WebApplication3\obj\Debug\WebApplication3.pdb
