@@ -91,5 +91,9 @@ namespace WebApplication3
         {
             Response.Redirect("Cabinet.aspx");
         }
+        protected void CatalogPage_Click(object sender, EventArgs e)  //Catalog
+        {
+            Response.Redirect("Catalog.aspx");
+        }
     }
 }

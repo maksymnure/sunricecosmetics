@@ -40,10 +40,12 @@ namespace WebApplication3
                 case "1":
                     StartPager.Visible = false;
                     RegisterPage.Visible = false;
+                    CatalogPage.Visible = true;
                     break;
                 case "2":
                     StartPager.Visible = false;
                     RegisterPage.Visible = false;
+                    CatalogPage.Visible = true;
                     break;
                 case "":
                     break;
@@ -64,6 +66,14 @@ namespace WebApplication3
         {
             Response.Redirect("Cabinet.aspx");
         }
+        protected void CatalogPage_Click(object sender, EventArgs e)  //Catalog
+        {
+            Response.Redirect("Catalog.aspx");
+        }
+        protected void BascketPage_Click(object sender, EventArgs e)  //Basket
+        {
+            Response.Redirect("Basket.aspx");
+        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -71,5 +81,7 @@ namespace WebApplication3
             string st = (string)Session["status"];
             Response.Redirect("StartPage.aspx");
         }
+
+
     }
 }
