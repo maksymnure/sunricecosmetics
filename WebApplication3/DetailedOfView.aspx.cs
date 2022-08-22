@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
 namespace WebApplication1
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class DetailedOfView : System.Web.UI.Page
     {
         public Cart objCart;
         protected void Page_Load(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace WebApplication1
         }
         protected void BascketPage_Click(object sender, EventArgs e)  //Basket
         {
-            Response.Redirect("Bascket.aspx");
+            Response.Redirect("Basket.aspx");
         }
         protected void Button1_Click(object sender, EventArgs e)  //добавить в корзину
         {

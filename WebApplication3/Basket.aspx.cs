@@ -78,19 +78,38 @@ namespace WebApplication1
         {
             
         }
-
+        int kolvo = 0;
         public void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             objCart = (Cart)Session["Cart"];
             int Count = Convert.ToUInt16(objCart.Count);
-            decimal cost = 1.00m;            
+            decimal cost = 1.00m;
             if (e.CommandName == "ButtonGr1")   //увеличить
             {
+                string connectionString = WebConfigurationManager.ConnectionStrings["cosmetics"].ConnectionString;
+                SqlConnection con = new SqlConnection(connectionString);
+                string sql = "SELECT amount FROM Product WHERE (id_product = " + Session["id_product"].ToString() + ")";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                con.Open();
+                SqlDataReader drKolvo = cmd.ExecuteReader();
+                drKolvo.Read();
+                int db_kolvo = Convert.ToInt16(drKolvo["amount"].ToString());
                 int index = Convert.ToInt32(e.CommandArgument);
-                int k = Convert.ToInt16(objCart[index].amount)+1;
+                int k = 0;
+                if (Convert.ToInt16(objCart[index].amount) >= db_kolvo)  // проверяем количество, если = 0, то заказать не сможем
+                {
+                    k = Convert.ToInt16(objCart[index].amount);
+
+                }
+                else if (Convert.ToInt16(objCart[index].amount) <= db_kolvo)
+                {
+                    k = Convert.ToInt16(objCart[index].amount) + 1;
+                }
+
+                kolvo = k;
                 objCart[index].amount = Convert.ToString(k);
                 cost = cost * Convert.ToDecimal(objCart[index].price);
-                cost = (decimal)(cost * k);                                
+                cost = (decimal)(cost * k);
                 cost = Math.Round(cost, 2);
                 objCart[index].cost = cost.ToString("0.00");
                 cost = 0.00m;
@@ -98,7 +117,7 @@ namespace WebApplication1
                 {
                     cost = cost + Convert.ToDecimal(obj.cost);
                 }
-                Literal6.Text = "Сумма заказа: " +  cost.ToString("0.00");
+                Literal6.Text = "Сумма заказа: " + cost.ToString("0.00");
             }
             if (e.CommandName == "ButtonGr2")  //уменьшить
             {
