@@ -33,6 +33,15 @@ namespace WebApplication3
         protected global::System.Web.UI.WebControls.LinkButton StartPager;
 
         /// <summary>
+        /// RegisterPage элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton RegisterPage;
+
+        /// <summary>
         /// TextBoxLogin элемент управления.
         /// </summary>
         /// <remarks>
@@ -51,13 +60,13 @@ namespace WebApplication3
         protected global::System.Web.UI.WebControls.TextBox TextBoxPassword;
 
         /// <summary>
-        /// Button1 элемент управления.
+        /// SignIn элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button SignIn;
 
         /// <summary>
         /// Label1ms элемент управления.

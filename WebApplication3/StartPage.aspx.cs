@@ -40,8 +40,12 @@ namespace WebApplication3
         {
             Response.Redirect("StartPage.aspx");
         }
+        protected void RegisterPage_Click(object sender, EventArgs e)  //RegisterPage
+        {
+            Response.Redirect("Registration.aspx");
+        }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void SignIn_Click(object sender, EventArgs e)
         {
             string connectionString = WebConfigurationManager.ConnectionStrings["cosmetics"].ConnectionString;
             SqlConnection con = new SqlConnection(connectionString);
@@ -71,6 +75,7 @@ namespace WebApplication3
                 drWebUser.Close();
                 con.Close();
                 Label1ms.Text = "Неверный логин или пароль";
+                Label1ms.ForeColor = System.Drawing.Color.Red;
             }
         }
     }
