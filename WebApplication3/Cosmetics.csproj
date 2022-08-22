@@ -67,6 +67,10 @@
   <ItemGroup>
     <Content Include="Cabinet.aspx" />
     <Content Include="Cabinet.css" />
+    <Content Include="Catalog.aspx" />
+    <Content Include="Catalog.css" />
+    <Content Include="DetailedOfView.aspx" />
+    <Content Include="DetailedOfView.css" />
     <Content Include="Registration.aspx" />
     <Content Include="Registration.css" />
     <Content Include="StartPage.aspx" />
@@ -88,6 +92,20 @@
     </Compile>
     <Compile Include="Cabinet.aspx.designer.cs">
       <DependentUpon>Cabinet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Catalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog.aspx.designer.cs">
+      <DependentUpon>Catalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailedOfView.aspx.cs">
+      <DependentUpon>DetailedOfView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailedOfView.aspx.designer.cs">
+      <DependentUpon>DetailedOfView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">

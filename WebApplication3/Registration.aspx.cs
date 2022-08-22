@@ -120,7 +120,7 @@ namespace WebApplication3
                 Session["id_client"] = drWebUser["id_client"].ToString().Trim();
                 drWebUser.Close();
                 con.Close();
-                Response.Redirect("StartPage.aspx");
+                Response.Redirect("Cabinet.aspx");
             }
           
         }
@@ -131,6 +131,14 @@ namespace WebApplication3
         protected void RegisterPage_Click(object sender, EventArgs e)  //RegisterPage
         {
             Response.Redirect("Registration.aspx");
+        }
+        protected void CatalogPage_Click(object sender, EventArgs e)  //Catalog
+        {
+            Response.Redirect("Catalog.aspx");
+        }
+        protected void CabinetPage_Click(object sender, EventArgs e)  //Catalog
+        {
+            Response.Redirect("Cabinet.aspx");
         }
     }
 }
