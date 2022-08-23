@@ -8,7 +8,6 @@
     <form id="form1" runat="server">
     <header>
         <nav>
-            <asp:LinkButton ID="StartPage" runat="server" onclick="StartPage_Click" CssClass="LinkButton">Главная</asp:LinkButton>
             <asp:LinkButton ID="Catalog" runat="server" OnClick="Catalog_Click" CssClass="LinkButton">Каталог</asp:LinkButton>
             <asp:LinkButton ID="Registr" runat="server" onclick="Registr_Click" CssClass="LinkButton">Регистрация</asp:LinkButton>
             <asp:LinkButton ID="Cab" runat="server" onclick="Cab_Click" CssClass="LinkButton">Кабинет</asp:LinkButton>

@@ -58,11 +58,6 @@ namespace WebApplication3
             Response.Redirect("Cabinet.aspx");
         }
 
-
-        protected void StartPage_Click(object sender, EventArgs e)  //Главная
-        {
-            Response.Redirect("StartPage.aspx");
-        }
         protected void Catalog_Click(object sender, EventArgs e) //Каталог
         {
             Response.Redirect("Catalog.aspx");

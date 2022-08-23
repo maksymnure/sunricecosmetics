@@ -73,6 +73,8 @@
     <Content Include="Catalog.css" />
     <Content Include="DetailedOfView.aspx" />
     <Content Include="DetailedOfView.css" />
+    <Content Include="OrderDetails.aspx" />
+    <Content Include="OrderDetails.css" />
     <Content Include="Orders.aspx" />
     <Content Include="Orders.css" />
     <Content Include="Registration.aspx" />
@@ -119,6 +121,13 @@
     </Compile>
     <Compile Include="DetailedOfView.aspx.designer.cs">
       <DependentUpon>DetailedOfView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetails.aspx.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderDetails.aspx.designer.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Orders.aspx.cs">
       <DependentUpon>Orders.aspx</DependentUpon>
