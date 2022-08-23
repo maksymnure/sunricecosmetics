@@ -74,6 +74,10 @@ namespace WebApplication3
         {
             Response.Redirect("Basket.aspx");
         }
+        protected void OrdersPage_Click(object sender, EventArgs e)  //Basket
+        {
+            Response.Redirect("Orders.aspx");
+        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
