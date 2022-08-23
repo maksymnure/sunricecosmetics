@@ -11,7 +11,7 @@ namespace WebApplication3
 {
 
 
-    public partial class Cabinet
+    public partial class Orders
     {
 
         /// <summary>
@@ -24,75 +24,93 @@ namespace WebApplication3
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// StartPager элемент управления.
+        /// Catalog элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton StartPager;
+        protected global::System.Web.UI.WebControls.LinkButton Catalog;
 
         /// <summary>
-        /// RegisterPage элемент управления.
+        /// Registr элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton RegisterPage;
+        protected global::System.Web.UI.WebControls.LinkButton Registr;
 
         /// <summary>
-        /// CatalogPage элемент управления.
+        /// Cab элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton CatalogPage;
+        protected global::System.Web.UI.WebControls.LinkButton Cab;
 
         /// <summary>
-        /// CabinetPage элемент управления.
+        /// Ord элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton CabinetPage;
+        protected global::System.Web.UI.WebControls.LinkButton Ord;
 
         /// <summary>
-        /// BascketPage элемент управления.
+        /// Literal1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton BascketPage;
+        protected global::System.Web.UI.WebControls.Literal Literal1;
 
         /// <summary>
-        /// Orders элемент управления.
+        /// Literal2 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Orders;
+        protected global::System.Web.UI.WebControls.Literal Literal2;
 
         /// <summary>
-        /// SqlDataSource1 элемент управления.
+        /// Literal3 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.Literal Literal3;
 
         /// <summary>
-        /// Exit элемент управления.
+        /// Literal4 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Exit;
+        protected global::System.Web.UI.WebControls.Literal Literal4;
+
+        /// <summary>
+        /// GridView2 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView2;
+
+        /// <summary>
+        /// SqlDataSource2 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
     }
 }

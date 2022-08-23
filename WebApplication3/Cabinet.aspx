@@ -14,6 +14,7 @@
             <asp:LinkButton ID="CatalogPage" runat="server" onclick="CatalogPage_Click" CssClass="LinkButton">Каталог</asp:LinkButton>
             <asp:LinkButton ID="CabinetPage" runat="server" onclick="CabinetPage_Click" CssClass="LinkButton">Кабінет</asp:LinkButton>
             <asp:LinkButton ID="BascketPage" runat="server" onclick="BascketPage_Click" CssClass="LinkButton">Кошик</asp:LinkButton>
+            <asp:LinkButton ID="Orders" runat="server" onclick="OrdersPage_Click" CssClass="LinkButton">Замовлення</asp:LinkButton>
         </nav>
     </header>
         <div class="form">

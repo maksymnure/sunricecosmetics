@@ -7,11 +7,11 @@
 // </автоматически создаваемое>
 //------------------------------------------------------------------------------
 
-namespace WebApplication3
+namespace Furniture
 {
 
 
-    public partial class Cabinet
+    public partial class OrderDetails
     {
 
         /// <summary>
@@ -24,58 +24,31 @@ namespace WebApplication3
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// StartPager элемент управления.
+        /// Catalog элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton StartPager;
+        protected global::System.Web.UI.WebControls.LinkButton Catalog;
 
         /// <summary>
-        /// RegisterPage элемент управления.
+        /// Cab элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton RegisterPage;
+        protected global::System.Web.UI.WebControls.LinkButton Cab;
 
         /// <summary>
-        /// CatalogPage элемент управления.
+        /// Ord элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton CatalogPage;
-
-        /// <summary>
-        /// CabinetPage элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически созданное поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton CabinetPage;
-
-        /// <summary>
-        /// BascketPage элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически созданное поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton BascketPage;
-
-        /// <summary>
-        /// Orders элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически созданное поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Orders;
+        protected global::System.Web.UI.WebControls.LinkButton Ord;
 
         /// <summary>
         /// SqlDataSource1 элемент управления.
@@ -87,12 +60,21 @@ namespace WebApplication3
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// Exit элемент управления.
+        /// GridView2 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Exit;
+        protected global::System.Web.UI.WebControls.GridView GridView2;
+
+        /// <summary>
+        /// Label1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }
