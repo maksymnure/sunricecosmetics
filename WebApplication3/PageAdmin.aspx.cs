@@ -4,69 +4,75 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.SessionState;
+using System.Web.Configuration;
+using System.Text;
+using System.Data;
+using System.Data.SqlClient;
 
-namespace WebApplication3
+namespace Furniture
 {
-    public partial class Orders : System.Web.UI.Page
+    public partial class PageAdmin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Literal1.Text = Session["surname"].ToString();
-            Literal2.Text = Session["name"].ToString();
-            Literal3.Text = Session["middlename"].ToString();
-            Literal4.Text = Session["id_client"].ToString();
-            Status();
+            Registration();
         }
 
-        protected void Status()
+        protected void Registration()
         {
             string st = (string)Session["status"];
-            if (st == null || st == "")
-            {
-                Response.Redirect("StartPage.aspx");
-            }
             switch (st)
             {
                 case "1":
+                    PageAdmine.Visible = true;
                     Cab.Visible = true;
                     Ord.Visible = false;
                     break;
                 case "2":
+                    PageAdmine.Visible = false;
                     Cab.Visible = true;
                     Ord.Visible = false;
                     break;
                 case "":
+                    PageAdmine.Visible = false;
                     Cab.Visible = false;
                     Ord.Visible = false;
                     break;
                 case null:
+                    PageAdmine.Visible = false;
                     Cab.Visible = false;
                     Ord.Visible = false;
                     break;
             }
-        }
-        protected void Registr_Click(object sender, EventArgs e)   //регистрация
-        {
-            Response.Redirect("Registration.aspx");
         }
         protected void Cab_Click(object sender, EventArgs e)  //Кабинет 
         {
             Response.Redirect("Cabinet.aspx");
         }
 
+        protected void PageAdmine_Click(object sender, EventArgs e)  //Для админа
+        {
+            Response.Redirect("PageAdmin.aspx");
+        }
+
         protected void Catalog_Click(object sender, EventArgs e) //Каталог
         {
             Response.Redirect("Catalog.aspx");
         }
-        protected void Ord_Click(object sender, EventArgs e) //Заказы
+        protected void Ord_Click(object sender, EventArgs e)
         {
             Response.Redirect("Orders.aspx");
         }
-
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Session["number"] = GridView2.SelectedDataKey.Values["number"].ToString();
+            Session["number"] = GridView1.SelectedDataKey.Values["number"].ToString();
             Response.Redirect("OrderDetails.aspx");
+        }
+
+        protected void LinkButton5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Catalog.aspx");
         }
     }
 }

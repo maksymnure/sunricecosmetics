@@ -41,11 +41,13 @@ namespace WebApplication3
                     StartPager.Visible = false;
                     RegisterPage.Visible = false;
                     CatalogPage.Visible = true;
+                    AdminPage.Visible = false;
                     break;
                 case "2":
                     StartPager.Visible = false;
                     RegisterPage.Visible = false;
                     CatalogPage.Visible = true;
+                    AdminPage.Visible = true;
                     break;
                 case "":
                     break;
@@ -77,6 +79,10 @@ namespace WebApplication3
         protected void OrdersPage_Click(object sender, EventArgs e)  //Basket
         {
             Response.Redirect("Orders.aspx");
+        }
+        protected void AdminPage_Click(object sender, EventArgs e)  //Basket
+        {
+            Response.Redirect("PageAdmin.aspx");
         }
 
         protected void Button1_Click(object sender, EventArgs e)
