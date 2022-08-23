@@ -26,18 +26,6 @@ header nav {
             opacity: 0.75;
         }
 
-.form {
-    margin: 30px;
-    background-color: #f9f9f9;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    max-width: 1200px;
-    border: solid;
-    border-width: 1px;
-    border-radius: 16px;
-    border-color: #e7e7e7;
-}
 
 h2 {
     padding: 15px;
@@ -135,4 +123,18 @@ h2 {
     .catalog {
         margin-left: 20%;
     }
+}
+.form {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-top: 50px;
+    border-radius: 45px;
+    box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+}
+
+.number {
+    padding: 10px;
+    border: none;
 }

@@ -19,7 +19,7 @@
         <header>
         <nav>
             <asp:LinkButton ID="Catalog" runat="server" OnClick="Catalog_Click" CssClass="LinkButton">Каталог</asp:LinkButton>
-            <asp:LinkButton ID="Cab" runat="server" onclick="Cab_Click" CssClass="LinkButton">Кабинет</asp:LinkButton>
+            <asp:LinkButton ID="Cab" runat="server" onclick="Cab_Click" CssClass="LinkButton">Кабінет</asp:LinkButton>
             <asp:LinkButton ID="Ord" runat="server" OnClick="Ord_Click" CssClass="LinkButton">Замовлення</asp:LinkButton>
         </nav>
     </header>
@@ -49,7 +49,6 @@
                             <asp:BoundField DataField="title" HeaderText="Название" SortExpression="title" />
                             <asp:BoundField DataField="quantity" HeaderText="Количество" SortExpression="quantity" />
                             <asp:BoundField DataField="price" HeaderText="Цена" SortExpression="price" />
-                            <asp:BoundField DataField="price1" HeaderText="price1" SortExpression="price1" />
                         </Columns>
                     </asp:GridView>
                 </td>

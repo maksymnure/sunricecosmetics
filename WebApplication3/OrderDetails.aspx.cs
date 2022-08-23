@@ -71,7 +71,7 @@ namespace Furniture
             {
                 // Это умножит цену на штуку и прибавит ее к окончательной сумме. 
                 totalPrice += Convert.ToDecimal(DataBinder.Eval(e.Row.DataItem, "price")) * Convert.ToInt32(DataBinder.Eval(e.Row.DataItem, "quantity"));
-                Label1.Text = Convert.ToString(totalPrice); 
+                Label1.Text = "Сумма усього замовлення: " + Convert.ToString(totalPrice); 
             }
             else if (e.Row.RowType == DataControlRowType.Footer)
             {
